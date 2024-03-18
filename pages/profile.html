@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông tin cá nhân - Đi chợ Online</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../assets/js/all.min.js"></script>
+
+
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg border-bottom fixed-top">
+      <div class="container ">
+        <a href="index.html" class="text-white navbar-brand">Market Online</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarCollapse">
+          <ul class="navbar-nav me-auto ">
+            <li class="nav-item active">
+              <a href="index.html" class="text-white text-opacity-100 nav-link active" aria-current="page">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="text-white text-opacity-75 nav-link">Sản phẩm</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="text-white text-opacity-75 nav-link">Về chúng tôi</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="text-white text-opacity-75 nav-link">Liên hệ</a>
+            </li>
+          </ul>
+          <a href="cart.html">
+            <img src="../assets/images/Shopping Cart_24px.png" alt="Account icon" class="icon pe-2">
+          </a>
+
+          <div class="dropdown">
+            <a href="cart.html" class="dropdown-toggle" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="../assets/images/account_24px.png" alt="Account icon" class="icon">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+              <li><a class="dropdown-item" href="register.html">Đăng ký</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- container -->
+
+    <div class="container-fluid py-5 mb-5 background-header mt-5">
+        <div class="container">
+            <div class="row align-items-center text-center">
+                <h1 class="display-1">Thông tin tài khoản</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec ante eros. Phasellus posuere magna in nunc maximus, sed elementum tortor faucibus.</p>
+            </div>
+          </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="tab-pane fade pt-4 show active" id="step-1" role="tabpanel" aria-labelledby="step-1-tab">
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Giới tính:</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="sex" id="sex-male" value="male">
+                    <label class="form-check-label" for="sex-male">Nam</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="sex" id="sex-female" value="female">
+                    <label class="form-check-label" for="sex-female">Nữ</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label" for="birthday">Ngày tháng năm sinh:</label>
+                <input type="date" id="birthday"  class="form-control" name="birthday">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label" for="phone">SĐT:</label>
+                <input type="tel" class="form-control" id="phone">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label" for="name">Họ và tên:</label>
+                <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label class="form-label" for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="username@domain.com">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-9 mb-3">
+                <label class="form-label" for="address">Địa chỉ:</label>
+                <input type="text" class="form-control" id="address" placeholder="123 Street Name">
+              </div>
+              <div class="col-md-3 mb-3">
+                <label class="form-label" for="apartment">Toàn nha:</label>
+                <input type="text" class="form-control" id="apartment" placeholder="B3, Tầng 4">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label class="form-label" for="country">Phường/Xã:</label>
+                    <select id="country" class="form-select">
+                      <option value="" selected>- Chọn phường xã -</option>
+                      <option value=" Bến Nghé"> Bến Nghé</option>
+                      <option value=" Bến Thành"> Bến Thành</option>
+                      <option value="Cầu Kho">Cầu Kho</option>
+                      <option value="Cầu Ông Lãnh">Cầu Ông Lãnh</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label" for="country">Quận/Huyện:</label>
+                    <select id="country" class="form-select">
+                      <option value="" selected>- Chọn quận huyện -</option>
+                      <option value="Quận 1">Quận 1</option>
+                      <option value="Quận 2">Quận 2</option>
+                      <option value="Quận 3">Quận 3</option>
+                    </select>
+                  </div>
+              <div class="col-md-4 mb-3">
+                <label class="form-label" for="country">Tỉnh/Thành:</label>
+                <select id="country" class="form-select">
+                  <option value="" selected>- Chọn tỉnh thành -</option>
+                  <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                  <option value="Hồ Chí Minh">Hà Nội</option>
+                  <option value="Đà nẵng">Đà Nẵng</option>
+                  <option value="Huế">Huế</option>
+                </select>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="small bg-footer ">
+        <div class="container py-3 py-sm-5 p-5">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+              <h6 class="text-light">Liên kết nhanh</h6>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="services.html">Về chúng tôi</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <h6 class="text-light">Thông tin liên hệ</h6>
+              <ul class="list-unstyled">
+                <li><a href="#0">Legal information</a></li>
+                <li><a href="#0">Job opportunities</a></li>
+                <li><a href="#0">Frequently Asked Questions</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <h6 class="text-light" >Theo dõi chúng tôi</h6>
+              <ul class="list-unstyled">
+                <li><a href="#0"><i class="fab fa-fw fa-facebook"></i> Facebook</a></li>
+                <li><a href="#0"><i class="fab fa-fw fa-instagram"></i> Instagram</a></li>
+                <li><a href="#0"><i class="fab fa-fw fa-twitter"></i> Twitter</a></li>
+                <li><a href="#0"><i class="fab fa-fw fa-youtube"></i> YouTube</a></li>
+                <li><a href="#0"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <h6 class="text-light">Địa chỉ chúng tôi</h6>
+              <address>
+                <strong>Company Name</strong><br>
+                Steet Name<br>
+                ZIP code and city<br>
+                <i class="fas fa-fw fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a><br>
+                <i class="fas fa-fw fa-envelope"></i> <a href="mailto:info@domain.com">info@domain.com</a>
+              </address>
+            </div>
+          </div>
+          <ul class="list-inline mt-2 mb-0 text-center">
+            <li class="list-inline-item">&copy; 2024 Company Name</li>
+            <li class="list-inline-item">All rights reserved.</li>
+          </ul>
+        </div>
+      </footer>
+
+      <script src="../assets/js/script.js"></script>
+  </body>
+</html>

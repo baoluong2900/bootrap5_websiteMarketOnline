@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm - Đi chợ Online</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../assets/js/all.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg border-bottom fixed-top">
+      <div class="container ">
+        <a href="index.html" class="text-white navbar-brand">Market Online</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarCollapse">
+          <ul class="navbar-nav me-auto ">
+            <li class="nav-item active">
+              <a href="index.html" class="text-white text-opacity-100 nav-link active" aria-current="page">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="text-white text-opacity-75 nav-link">Sản phẩm</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="text-white text-opacity-75 nav-link">Về chúng tôi</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="text-white text-opacity-75 nav-link">Liên hệ</a>
+            </li>
+          </ul>
+
+          <a href="cart.html">
+            <img src="../assets/images/Shopping Cart_24px.png" alt="Account icon" class="icon pe-2">
+          </a>
+
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="../assets/images/account_24px.png" alt="Account icon" class="icon">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="login.html">Đăng nhập</a></li>
+              <li><a class="dropdown-item" href="register.html">Đăng ký</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- container -->
+    <div class="container-fluid py-5 mb-5 background-header mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                <img src="../assets/images/bg-header-insert.jpg" class="img-fluid">
+              </div>
+              <div class="col-12 col-lg-6">
+                <h1 class="display-1">Market Online</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec ante eros. Phasellus posuere magna in nunc maximus, sed elementum tortor faucibus.</p>
+                <a href="#0" class="btn btn-lg btn-success me-2 ">Xem thêm</a>
+                <a href="#0" class="btn btn-lg btn-outline-success">Liên hệ chúng tôi</a>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="container-fluid fruite py-5">
+        <div class="container py-5">
+            <h1 class="mb-4">Cửa hàng trái cây tươi</h1>
+            <div class="row g-4">
+                <div class="col-lg-12">
+                    <div class="row g-4">
+                        <div class="col-xl-3">
+                            <div class="input-group w-100 mx-auto d-flex">
+                                <input type="search" class="form-control p-3" placeholder="Nhập tên tìm kiếm" aria-describedby="search-icon-1">
+                                <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-6"></div>
+                        <div class="col-xl-3">
+                            <div class="bg-light ps-3 py-3 rounded d-flex justify-content-between mb-4">
+                                <label for="fruits">Default Sorting:</label>
+                                <select id="fruits" name="fruitlist" class="border-0 form-select-sm bg-light me-3" form="fruitform">
+                                    <option value="volvo">Nothing</option>
+                                    <option value="saab">Popularity</option>
+                                    <option value="opel">Organic</option>
+                                    <option value="audi">Fantastic</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="mb-3">
+                                        <h4>Loại trái cây</h4>
+                                        <ul class="list-unstyled fruite-categorie">
+                                            <li>
+                                                <div class="d-flex justify-content-between fruite-name">
+                                                    <a href="#"><i class="fas fa-apple-alt me-2"></i>Táo</a>
+                                                    <span>(3)</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between fruite-name">
+                                                    <a href="#"><i class="fas fa-apple-alt me-2"></i>Cam</a>
+                                                    <span>(5)</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between fruite-name">
+                                                    <a href="#"><i class="fas fa-apple-alt me-2"></i>Dâu tây</a>
+                                                    <span>(2)</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between fruite-name">
+                                                    <a href="#"><i class="fas fa-apple-alt me-2"></i>Chuối</a>
+                                                    <span>(8)</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="d-flex justify-content-between fruite-name">
+                                                    <a href="#"><i class="fas fa-apple-alt me-2"></i>Bí ngô</a>
+                                                    <span>(5)</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mb-3">
+                                        <h4 class="mb-2">Giá</h4>
+                                        <input type="range" class="form-range w-100" id="rangeInput" name="rangeInput" min="0" max="500" value="0" oninput="amount.value=rangeInput.value">
+                                        <output id="amount" name="amount" min-velue="0" max-value="500" for="rangeInput">0</output>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mb-3">
+                                        <h4>Mặt hàng</h4>
+                                        <div class="mb-2">
+                                            <input type="radio" class="me-2" id="Categories-1" name="Categories-1" value="Beverages">
+                                            <label for="Categories-1"> Hữu cơ</label>
+                                        </div>
+                                        <div class="mb-2">
+                                            <input type="radio" class="me-2" id="Categories-2" name="Categories-1" value="Beverages">
+                                            <label for="Categories-2"> Tươi</label>
+                                        </div>
+                                        <div class="mb-2">
+                                            <input type="radio" class="me-2" id="Categories-3" name="Categories-1" value="Beverages">
+                                            <label for="Categories-3"> Hạ giá</label>
+                                        </div>
+                                        <div class="mb-2">
+                                            <input type="radio" class="me-2" id="Categories-4" name="Categories-1" value="Beverages">
+                                            <label for="Categories-4"> Khuyến mãi</label>
+                                        </div>
+                                        <div class="mb-2">
+                                            <input type="radio" class="me-2" id="Categories-5" name="Categories-1" value="Beverages">
+                                            <label for="Categories-5"> Hết hạn</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <h4 class="mb-3">Sản phẩm nổi bật</h4>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <div class="rounded me-4" style="width: 100px; height: 100px;">
+                                            <img src="../assets/images/featur-1.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-2">Táo</h6>
+                                            <div class="d-flex mb-2">
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <div class="d-flex mb-2">
+                                                <h6 class="fw-bold me-2 text-nowrap">45,000 VNĐ</h6>
+                                                <h6 class="text-danger text-decoration-line-through text-nowrap">30,000 VNĐ</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <div class="rounded me-4" style="width: 100px; height: 100px;">
+                                            <img src="../assets/images/featur-2.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-2">Dâu tây</h6>
+                                            <div class="d-flex mb-2">
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <div class="d-flex mb-2">
+                                                <h6 class="fw-bold me-2 text-nowrap">75,000 VNĐ</h6>
+                                                <h6 class="text-danger text-decoration-line-through text-nowrap">50,000 VNĐ</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-start">
+                                        <div class="rounded me-4" style="width: 100px; height: 100px;">
+                                            <img src="../assets/images/featur-3.jpg" class="img-fluid rounded" alt="">
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-2">Bông cải xanh</h6>
+                                            <div class="d-flex mb-2">
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <div class="d-flex mb-2">
+                                                <h6 class="fw-bold me-2 text-nowrap">30,000 VNĐ</h6>
+                                                <h6 class="text-danger text-decoration-line-through text-nowrap">10,000 VNĐ</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center my-4">
+                                        <a href="#" class="btn border border-secondary px-4 py-3 rounded-pill text-primary w-100">Xem thêm</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="position-relative">
+                                        <img src="../assets/images/banner-fruits.jpg" class="img-fluid w-100 rounded" alt="">
+                                        <div class="position-absolute" style="top: 50%; right: 10px; transform: translateY(-50%);">
+                                            <h3 class="text-secondary fw-bold">RAU <br> CỦ <br> TƯƠI</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                    <div class="rounded position-relative fruite-item">
+                                        <div class="fruite-img">
+                                            <img src="../assets/images/fruite-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                        </div>
+                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Trái cây</div>
+                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                            <h4>Cam</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-dark fs-6 fw-bold mt-2">48,000 VNĐ / kg</p>
+                                                <a href="#" class="btn border border-success rounded-pill p-2 text-success" ><i class="fa fa-shopping-bag me-2 text-success"></i> Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                    <div class="rounded position-relative fruite-item">
+                                        <div class="fruite-img">
+                                            <img src="../assets/images/fruite-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                        </div>
+                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Trái cây</div>
+                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                            <h4>Nhỏ Mỹ</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-dark fs-6 fw-bold mt-2">116,000 VNĐ / kg</p>
+                                                <a href="#" class="btn border border-success rounded-pill p-2 text-success" ><i class="fa fa-shopping-bag me-2 text-success"></i> Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                    <div class="rounded position-relative fruite-item">
+                                        <div class="fruite-img">
+                                            <img src="../assets/images/fruite-item-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                        </div>
+                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Trái cây</div>
+                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                            <h4>Dâu tầm</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-dark fs-6 fw-bold mt-2">95,000 VNĐ / kg</p>
+                                                <a href="#" class="btn border border-success rounded-pill p-2 text-success" ><i class="fa fa-shopping-bag me-2 text-success"></i> Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                    <div class="rounded position-relative fruite-item">
+                                        <div class="fruite-img">
+                                            <img src="../assets/images/fruite-item-4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                        </div>
+                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Trái cây</div>
+                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                            <h4>Đu đủ</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-dark fs-6 fw-bold mt-2">70,000 VNĐ / kg</p>
+                                                <a href="#" class="btn border border-success rounded-pill p-2 text-success" ><i class="fa fa-shopping-bag me-2 text-success"></i> Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                    <div class="rounded position-relative fruite-item">
+                                        <div class="fruite-img">
+                                            <img src="../assets/images/fruite-item-3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                        </div>
+                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Trái cây</div>
+                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                            <h4>Chuối</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-dark fs-6 fw-bold mt-2">30,000 VNĐ / kg</p>
+                                                <a href="#" class="btn border border-success rounded-pill p-2 text-success" ><i class="fa fa-shopping-bag me-2 text-success"></i> Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                    <div class="rounded position-relative fruite-item">
+                                        <div class="fruite-img">
+                                            <img src="../assets/images/fruite-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                        </div>
+                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Trái cây</div>
+                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                            <h4>Cam Mỹ</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-dark fs-6 fw-bold mt-2">48,000 VNĐ / kg</p>
+                                                <a href="#" class="btn border border-success rounded-pill p-2 text-success" ><i class="fa fa-shopping-bag me-2 text-success"></i> Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                    <div class="rounded position-relative fruite-item">
+                                        <div class="fruite-img">
+                                            <img src="../assets/images/fruite-item-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                        </div>
+                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Trái cây</div>
+                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                            <h4>Dâu Đà Lạt</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-dark fs-6 fw-bold mt-2">90,000 VNĐ / kg</p>
+                                                <a href="#" class="btn border border-success rounded-pill p-2 text-success" ><i class="fa fa-shopping-bag me-2 text-success"></i> Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                    <div class="rounded position-relative fruite-item">
+                                        <div class="fruite-img">
+                                            <img src="../assets/images/fruite-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                        </div>
+                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Trái cây</div>
+                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                            <h4>Nhỏ Đà Lạt</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-dark fs-6 fw-bold mt-2">95,000 VNĐ / kg</p>
+                                                <a href="#" class="btn border border-success rounded-pill p-2 text-success" ><i class="fa fa-shopping-bag me-2 text-success"></i> Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                    <div class="rounded position-relative fruite-item">
+                                        <div class="fruite-img">
+                                            <img src="../assets/images/fruite-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                        </div>
+                                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Trái cây</div>
+                                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                            <h4>Cam Đà Lạt</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                                <p class="text-dark fs-6 fw-bold mt-2">80,000 VNĐ / kg</p>
+                                                <a href="#" class="btn border border-success rounded-pill p-2 text-success" ><i class="fa fa-shopping-bag me-2 text-success"></i> Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12" aria-label="Search results pages">
+                                    <div class="container">
+                                        <ul class="pagination d-flex justify-content-center">
+                                            <li class="page-item">
+                                                <a href="#" class="page-link" aria-label="Previous">
+                                                    <span aria-hidden="true">«</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                            <li class="page-item">
+                                                <a href="#" class="page-link" aria-label="Next">
+                                                    <span aria-hidden="true">»</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="small bg-footer ">
+        <div class="container py-3 py-sm-5 p-5">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+              <h6 class="text-light">Liên kết nhanh</h6>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="services.html">Về chúng tôi</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <h6 class="text-light">Thông tin liên hệ</h6>
+              <ul class="list-unstyled">
+                <li><a href="#0">Legal information</a></li>
+                <li><a href="#0">Job opportunities</a></li>
+                <li><a href="#0">Frequently Asked Questions</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <h6 class="text-light" >Theo dõi chúng tôi</h6>
+              <ul class="list-unstyled">
+                <li><a href="#0"><i class="fab fa-fw fa-facebook"></i> Facebook</a></li>
+                <li><a href="#0"><i class="fab fa-fw fa-instagram"></i> Instagram</a></li>
+                <li><a href="#0"><i class="fab fa-fw fa-twitter"></i> Twitter</a></li>
+                <li><a href="#0"><i class="fab fa-fw fa-youtube"></i> YouTube</a></li>
+                <li><a href="#0"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+              <h6 class="text-light">Địa chỉ chúng tôi</h6>
+              <address>
+                <strong>Company Name</strong><br>
+                Steet Name<br>
+                ZIP code and city<br>
+                <i class="fas fa-fw fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a><br>
+                <i class="fas fa-fw fa-envelope"></i> <a href="mailto:info@domain.com">info@domain.com</a>
+              </address>
+            </div>
+          </div>
+          <ul class="list-inline mt-2 mb-0 text-center">
+            <li class="list-inline-item">&copy; 2024 Company Name</li>
+            <li class="list-inline-item">All rights reserved.</li>
+          </ul>
+        </div>
+      </footer>
+
+  </body>
+</html>
